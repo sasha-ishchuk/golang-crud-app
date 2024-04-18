@@ -18,6 +18,9 @@ func main() {
 
 	e.POST("/carts/:cartId/products/:productId", controllers.AddProductToCart)
 	e.DELETE("/carts/:cartId/products/:productId", controllers.RemoveProductFromCart)
+	e.GET("/carts/:cartId", controllers.ReadCart)
+
+	e.GET("/categories", controllers.ReadCategoriesWithProducts)
 
 	e.Logger.Fatal(e.Start(":8080"))
 }

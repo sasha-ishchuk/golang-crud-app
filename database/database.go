@@ -19,6 +19,7 @@ func InitDatabase() {
 	DB = database
 
 	InitializeCategories()
+	InitializeCart()
 }
 
 func InitializeCategories() {
@@ -31,5 +32,14 @@ func InitializeCategories() {
 			{Name: "Clothing"},
 		}
 		DB.Create(&categories)
+	}
+}
+
+func InitializeCart() {
+	var count int64
+	DB.Model(&models.Cart{}).Count(&count)
+	if count == 0 {
+		cart := models.Cart{}
+		DB.Create(&cart)
 	}
 }
