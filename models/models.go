@@ -22,3 +22,10 @@ type Cart struct {
 	gorm.Model
 	Products []Product `gorm:"many2many:cart_products;"`
 }
+
+type Card struct {
+	gorm.Model
+	Number       string
+	ExpireDate   string
+	SecurityCode string
+}
