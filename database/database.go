@@ -13,8 +13,9 @@ func InitDatabase() {
 	if err != nil {
 		panic("failed to connect database")
 	}
-	if err := database.AutoMigrate(&models.Product{}, &models.Category{}, &models.Cart{}); err != nil {
-		panic("failed to auto migrate")
+	err = database.AutoMigrate(&models.Product{}, &models.Category{}, &models.Cart{})
+	if err != nil {
+		panic("failed to auto migrate: " + err.Error())
 	}
 	DB = database
 
