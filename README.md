@@ -22,9 +22,9 @@ ___
 
 ### Commity
 1. Wymaganie 1 (pre-commit git hook): [commit](https://github.com/sasha-ishchuk/golang-crud-app/commit/5ec617bc76e496406a7ccca23858cac4cb325bfc)
-2. Wymaganie 2-3 (Sonar results below)
+2. Wymaganie 2-4 (Sonar results below)
    - sonar fixes [commit](https://github.com/sasha-ishchuk/golang-crud-app/commit/f787fec36a9b6cdbb8a27abc1e1848ff62068bf4)
-4. Wymaganie 4-5 (Sonar results below)
+4. Wymaganie 5 (Sonar results below) dot. aplikacji klienckiej
    - link to client app repo: [click here](https://github.com/sasha-ishchuk/react-front)
    - sonar fixes [commit](https://github.com/sasha-ishchuk/react-front/commit/f82fd8a88827168fb68db79e84b0613d99210d16)
 
