@@ -21,12 +21,12 @@ ___
 # ZADANIE 7 (SONAR)
 
 ### Commity
-1. Wymaganie 1 (pre-commit git hook): [commit](https://github.com/sasha-ishchuk/golang-crud-app/commit/6bbd2944b0bf9a24e5cc3ccf3c7a68068c532f64)
+1. Wymaganie 1 (pre-commit git hook): [commit](https://github.com/sasha-ishchuk/golang-crud-app/commit/5ec617bc76e496406a7ccca23858cac4cb325bfc)
 2. Wymaganie 2-3 (Sonar results below)
 3. Wymaganie 4-5 (Sonar results below), link to client app repo: [click here](https://github.com/sasha-ishchuk/react-front)
 
 ### Sonar 
 
-**Server app:**
-**Client app:**
-**SonarCloud:**
+**Server app:** [server](https://sonarcloud.io/project/overview?id=sasha-ishchuk_golang-crud-app)
+**Client app:** [client](https://sonarcloud.io/project/overview?id=sasha-ishchuk_react-front)
+**SonarCloud:** [sonar](https://sonarcloud.io/projects)
