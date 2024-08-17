@@ -7,6 +7,8 @@ import (
 	"golang-crud-app/database"
 )
 
+const ProductIDRoute = "/products/:id"
+
 func main() {
 	e := echo.New()
 
@@ -19,9 +21,9 @@ func main() {
 	}))
 
 	e.POST("/products", controllers.CreateProduct)
-	e.GET("/products/:id", controllers.ReadProduct)
-	e.PUT("/products/:id", controllers.UpdateProduct)
-	e.DELETE("/products/:id", controllers.DeleteProduct)
+	e.GET(ProductIDRoute, controllers.ReadProduct)
+	e.PUT(ProductIDRoute, controllers.UpdateProduct)
+	e.DELETE(ProductIDRoute, controllers.DeleteProduct)
 
 	e.POST("/carts/:cartId/products/:productId", controllers.AddProductToCart)
 	e.DELETE("/carts/:cartId/products/:productId", controllers.RemoveProductFromCart)

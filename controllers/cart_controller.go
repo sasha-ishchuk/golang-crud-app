@@ -10,12 +10,14 @@ import (
 	"strconv"
 )
 
+const CartNotFound = "Cart not found"
+
 func AddProductToCart(c echo.Context) error {
 	cartID, _ := strconv.ParseUint(c.Param("cartId"), 10, 32)
 	productId, _ := strconv.ParseUint(c.Param("productId"), 10, 32)
 	var cart models.Cart
 	if err := database.DB.Scopes(database.CartByID(uint(cartID)), database.PreloadProducts).First(&cart).Error; err != nil {
-		return c.JSON(http.StatusNotFound, "Cart not found")
+		return c.JSON(http.StatusNotFound, CartNotFound)
 	}
 	var product models.Product
 	if err := database.DB.Scopes(database.ProductByID(uint(productId))).First(&product).Error; err != nil {
@@ -39,7 +41,7 @@ func RemoveProductFromCart(c echo.Context) error {
 	}
 	var cart models.Cart
 	if err := database.DB.Preload("Products").Scopes(database.CartByID(uint(cartID))).First(&cart).Error; err != nil {
-		return c.JSON(http.StatusNotFound, "Cart not found")
+		return c.JSON(http.StatusNotFound, CartNotFound)
 	}
 	var product models.Product
 	if err := database.DB.Scopes(database.ProductByID(uint(productId))).First(&product).Error; err != nil {
@@ -60,7 +62,7 @@ func ReadCart(c echo.Context) error {
 	var cart models.Cart
 	if err := database.DB.Scopes(database.CartByID(uint(cartID)), database.PreloadProducts).First(&cart).Error; err != nil {
 		if errors.Is(err, gorm.ErrRecordNotFound) {
-			return c.JSON(http.StatusNotFound, "Cart not found")
+			return c.JSON(http.StatusNotFound, CartNotFound)
 		}
 		return c.JSON(http.StatusInternalServerError, err.Error())
 	}
