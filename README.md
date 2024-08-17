@@ -27,6 +27,8 @@ ___
 
 ### Sonar 
 
-**Server app:** [server](https://sonarcloud.io/project/overview?id=sasha-ishchuk_golang-crud-app)
-**Client app:** [client](https://sonarcloud.io/project/overview?id=sasha-ishchuk_react-front)
-**SonarCloud:** [sonar](https://sonarcloud.io/projects)
+- **Server app:** [server](https://sonarcloud.io/project/overview?id=sasha-ishchuk_golang-crud-app)
+
+- **Client app:** [client](https://sonarcloud.io/project/overview?id=sasha-ishchuk_react-front)
+
+- **SonarCloud:** [sonar](https://sonarcloud.io/projects)
