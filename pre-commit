@@ -1,0 +1,32 @@
+#!/bin/bash
+
+# shellcheck disable=SC2207
+STAGED_FILES=($(git diff --cached --name-only --diff-filter=ACM | grep '\.go$'))
+
+if [[ "${#STAGED_FILES[@]}" -eq 0 ]]; then
+    exit 0
+fi
+
+FAILED=false
+
+for FILE in "${STAGED_FILES[@]}"
+do
+    echo "Linting $FILE"
+    golangci-lint run "$FILE"
+
+    # shellcheck disable=SC2181
+    if [[ "$?" -ne 0 ]]; then
+        FAILED=true
+        echo "FAIL: $FILE"
+    else
+        echo "OK: $FILE"
+    fi
+done
+
+if "$FAILED"; then
+    echo -e "\nCOMMIT FAILED: Fix errors and try again\n"
+    exit 1
+else
+    echo -e "\nCOMMIT SUCCEEDED\n"
+    exit 0
+fi
