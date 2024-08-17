@@ -16,7 +16,7 @@ func AddProductToCart(c echo.Context) error {
 	var cart models.Cart
 	if err := database.DB.Scopes(database.CartByID(uint(cartID)), database.PreloadProducts).First(&cart).Error; err != nil {
 		return c.JSON(http.StatusNotFound, "Cart not found")
-		// comment test
+		// comment testfdf
 	}
 	var product models.Product
 	if err := database.DB.Scopes(database.ProductByID(uint(productId))).First(&product).Error; err != nil {
