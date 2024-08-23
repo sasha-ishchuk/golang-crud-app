@@ -29,3 +29,12 @@ type Card struct {
 	ExpireDate   string
 	SecurityCode string
 }
+
+type User struct {
+	gorm.Model
+	Email    string `gorm:"unique;not null"`
+	Password string `gorm:"not null"`
+	Token    string
+	Service  string //`gorm:"not null"`
+	GoToken  string //`gorm:"not null"`
+}

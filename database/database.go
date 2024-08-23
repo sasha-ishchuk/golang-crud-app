@@ -13,7 +13,7 @@ func InitDatabase() {
 	if err != nil {
 		panic("failed to connect database")
 	}
-	err = database.AutoMigrate(&models.Product{}, &models.Category{}, &models.Cart{})
+	err = database.AutoMigrate(&models.Product{}, &models.Category{}, &models.User{})
 	if err != nil {
 		panic("failed to auto migrate: " + err.Error())
 	}
