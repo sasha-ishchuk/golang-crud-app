@@ -1,4 +1,4 @@
-FROM golang:1.16-alpine AS build
+FROM golang:1.23-alpine AS build
 LABEL authors="alexa"
 
 WORKDIR /app
