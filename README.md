@@ -76,3 +76,27 @@ Kod: [client](https://github.com/sasha-ishchuk/react-front)
 
 Demo: [demo](https://github.com/sasha-ishchuk/golang-crud-app/blob/master/demo/zad8-demo.mp4)
 
+___
+___
+## Zadanie 10 - CI/CD
+
+### Spełnione wymagania:
+:white_check_mark: 3.0 wymaganie 1:  [commit server](https://github.com/sasha-ishchuk/golang-crud-app/commit/7b3643d224e255942aecc577df7908ce8c20f9bd), 
+[commit client](https://github.com/sasha-ishchuk/react-front/commit/0e42d69aef249d88010cd9aabac39c21b3fdb7f8)
+
+:white_check_mark: 3.5 wymaganie 2:  [commit server](https://github.com/sasha-ishchuk/golang-crud-app/commit/7b3643d224e255942aecc577df7908ce8c20f9bd),
+[commit client](https://github.com/sasha-ishchuk/react-front/commit/0e42d69aef249d88010cd9aabac39c21b3fdb7f8)
+
+:white_check_mark: 4.0 wymaganie 3:
+
+:white_check_mark: 4.5 wymaganie 4:
+
+:x: 5.0 wymaganie 5
+
+
+Kod: [server](https://github.com/sasha-ishchuk/golang-crud-app)
+
+Kod: [client](https://github.com/sasha-ishchuk/react-front)
+
+Demo: [demo]()
+
