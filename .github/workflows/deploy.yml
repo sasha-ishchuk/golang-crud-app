@@ -26,7 +26,7 @@ jobs:
     - name: Tag the Docker image
       run: |
         IMAGE_TAG=${{ secrets.ACR_NAME }}.azurecr.io/backend-image:latest
-        docker tag backend-image:$(date +%s) $IMAGE_TAG
+        docker tag backend-image:latest $IMAGE_TAG
 
     - name: Push the Docker image to ACR
       run: |
