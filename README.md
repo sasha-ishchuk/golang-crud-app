@@ -87,7 +87,8 @@ ___
 :white_check_mark: 3.5 wymaganie 2:  [commit server](https://github.com/sasha-ishchuk/golang-crud-app/commit/7b3643d224e255942aecc577df7908ce8c20f9bd),
 [commit client](https://github.com/sasha-ishchuk/react-front/commit/0e42d69aef249d88010cd9aabac39c21b3fdb7f8)
 
-:white_check_mark: 4.0 wymaganie 3:
+:white_check_mark: 4.0 wymaganie 3: [commit server](https://github.com/sasha-ishchuk/golang-crud-app/commit/dc59feb1bf5a30ab1154b06ce47023d64aee92fe),
+[commit client](https://github.com/sasha-ishchuk/react-front/commit/5add0ad56999eb9055354bfd5f4f115be8b099b5)
 
 :white_check_mark: 4.5 wymaganie 4:
 
