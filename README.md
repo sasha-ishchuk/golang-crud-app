@@ -100,5 +100,5 @@ Kod: [server](https://github.com/sasha-ishchuk/golang-crud-app)
 
 Kod: [client](https://github.com/sasha-ishchuk/react-front)
 
-Demo: [demo]()
+Demo: [demo](https://github.com/sasha-ishchuk/golang-crud-app/blob/master/demo/zad10-demo.mp4)
 
