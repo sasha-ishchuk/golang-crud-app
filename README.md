@@ -90,7 +90,8 @@ ___
 :white_check_mark: 4.0 wymaganie 3: [commit server](https://github.com/sasha-ishchuk/golang-crud-app/commit/dc59feb1bf5a30ab1154b06ce47023d64aee92fe),
 [commit client](https://github.com/sasha-ishchuk/react-front/commit/5add0ad56999eb9055354bfd5f4f115be8b099b5)
 
-:white_check_mark: 4.5 wymaganie 4:
+:white_check_mark: 4.5 wymaganie 4: [file server](https://github.com/sasha-ishchuk/golang-crud-app/blob/master/.github/workflows/deploy.yml),
+[file client](https://github.com/sasha-ishchuk/react-front/blob/master/.github/workflows/deploy.yml)
 
 :x: 5.0 wymaganie 5
 
